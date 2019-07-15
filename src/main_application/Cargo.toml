@@ -1,0 +1,17 @@
+[package]
+name = "khai_first_rts"
+version = "0.0.0"
+description = "Just an RTS game"
+authors = ["Hoàng Văn Khải <hvksmr1996@gmail.com>"]
+repository = "https://github.com/KSXGitHub/my-rts.git"
+keywords = ["RTS", "game", "amethyst"]
+categories = ["games::rts"]
+edition = "2018"
+
+[dependencies]
+khai_first_rts_engine = { path = "../game_engine" }
+khai_first_rts_ecs = { path = "../ecs" }
+
+[[bin]]
+name = "main_application"
+path = "main.rs"
